@@ -1,8 +1,11 @@
 import React from 'react'
 
- const Task = () => {
+ const Task = ({ task }) => {
   return (
-    <div>Task</div>
+    <div>
+        <h3>{task.name}</h3>
+        <p>{task.text}</p>
+    </div>
   )
 }
 
